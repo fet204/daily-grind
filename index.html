@@ -134,19 +134,24 @@
 			today = parseInt(today);
 		}
 
-
-
 		//TEST ONLY, DON'T LEAVE THIS LINE IN THE FINAL VERSION
 		//today = 0;
 
 		switch(today){
 			case 0:
 				today = "Sunday";
+				coffee = {
+					pic: "mocha.jpg",
+					alt: "Mocha coffee",
+					color: "brown",
+					description: `Mocha is one of the best coffee's and ill die on that hill`,
+					coffee: "Mocha coffee",
+					weekday: "Sunday",
+				}
 			break;
 
 			case 1:
 				today = "Monday";
-
 				coffee = {
 					pic: "bubble-tea.jpg",
 					alt: "A pic of bubble tea",
@@ -159,7 +164,6 @@
 
 			case 2:
 				today = "Tuesday";
-
 				coffee = {
 					pic: "caramel-latte.jpg",
 					alt: "A pic of caramel lattte",
@@ -172,7 +176,6 @@
 
 			case 3: 
 				today = "Wednesday";
-
 				coffee = {
 					pic: "pumpkin-spice-latte.jpg",
 					alt: "Pumpkin Spice Latte",
@@ -181,20 +184,42 @@
 					coffee: "Pumpkin Spice Latte",
 					weekday: "Wednesday",
 				}
-
-
 			break;
 
 			case 4:
 				today = "Thursday";
+				coffee = {
+					pic: "cold-brew.jpg",
+					alt: "Cold Brew",
+					color: "white",
+					description: `Are cold brews as cold as their name?`,
+					coffee: "Cold Brew",
+					weekday: "Thursday",
+				}
 			break;
 
 			case 5:
 				today = "Friday";
+				coffee = {
+					pic: "drip.jpg",
+					alt: "Drip Coffee",
+					color: "black",
+					description: `you got the drip and the drip coffee`,
+					coffee: "Drip Coffee",
+					weekday: "Friday",
+				}
 			break;
 
 			case 6:
 				today = "Saturday";
+				coffee = {
+					pic: "frappaccino.jpg",
+					alt: "frap picture",
+					color: "grey",
+					description: `Fraps for the frats!`,
+					coffee: "Frappaccino Coffee",
+					weekday: "Saturday",
+				}
 			break;
 
 			default: 
@@ -209,7 +234,6 @@
 		
 		console.log(coffee);
 
-		//alert("hi there!");
 	</script>
 	
 </body>
