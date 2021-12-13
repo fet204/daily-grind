@@ -49,7 +49,19 @@
 		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
 	</header>
     <main>
-		 <header><h3 class="slogan">You drink our coffee, we make large bucks!</h3></header>
+		<p>
+			This website is about different types of drinks on different days! Each day you should enjoy a delicous drink but to make sure it doens't get stale, we have provided you a different type of drink for each day of the week! Below is the criteria for the webpage.
+		</p>
+
+		<ul>
+			<li><p>One unique image, with appropriate and matching content in the alt tag.</p></li>
+			<li><p>A paragraph or two of content that describes the daily item (paragraph must include the name of the highlighted weekday)</p></li>
+			<li><p>A unique color that supports the image and paragraph of content</p></li>
+			<li><p>Use HTML/CSS & JavaScript to create a single page that rotates unique colors and content for each weekday (Sunday to Saturday) into the page.</p></li>
+		</ul>
+
+		
+		<header><h3 class="slogan">You drink our coffee, we make large bucks!</h3></header>
 		<div id="coffeeTarget"></div>
 
 		<p>Click below to view the coffee special for different days of the weekday</p>
@@ -61,12 +73,14 @@
 		<p><a href="?day=5">Friday</a></p>
 		<p><a href="?day=6">Saturday</a></p>
 
-		 <!--
-		 <p>
+		<!--
+		<p>
 			<img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
 			<strong>Monday's Coffee Special:</strong> Monday's daily coffee special is <strong>Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
 		</p>
 		-->
+
+
 	</main>
     <footer>
 		<small>&copy; 2014-2015, All Rights Reserved ~
@@ -92,7 +106,7 @@
 			let myReturn = "";
 
 			myReturn += `<p>
-			<img src="images/${coffee.pic}" alt="${coffee.alt}" />
+			<img id="coffee" src="images/${coffee.pic}" alt="${coffee.alt}" />
 			<strong>${coffee.weekday}'s Coffee Special:</strong> ${coffee.weekday}'s daily coffee special is <strong>${coffee.coffee}</strong>, ${coffee.description}</p>
 			</p>`;
 
